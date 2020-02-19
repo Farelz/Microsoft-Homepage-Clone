@@ -60,3 +60,30 @@ ul {
   flex: 1;
   margin-left: 20px;
 }
+
+.right-menu li.dropdown a:after {
+  position: relative;
+  float: right;
+  content: "";
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.menu-area {
+  padding: 40px 40px 0 40px;
+  background: #fff;
+  text-align: left;
+  border-top: 5px solid #164c82;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  top: -9999px;
+  left: 0;
+}
+
+li.dropdown a:hover ul.menu-area {
+  top: 100%;
+}
